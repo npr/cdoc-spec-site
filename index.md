@@ -3,7 +3,7 @@ layout: typedef
 title: Collection.Doc Documentation
 ---
 
-Welcome to the Collection.Document media type
+Welcome to the Collection.Document media type documentation.
 
 ```
 { "name"     : "irakli"
