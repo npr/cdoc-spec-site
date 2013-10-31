@@ -3,7 +3,7 @@ layout: typedef
 title: Collection.Doc Documentation
 ---
 
-Welcome to the Collection.Document 
+Welcome to the Collection.Document media type
 
 {% highlight json linenos=table %}
 { "name"     : "irakli"
