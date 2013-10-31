@@ -5,7 +5,7 @@ title: Collection.Doc Documentation
 
 Welcome to Collection.Document 
 
-{% highlight ruby linenos %}
+{% highlight json linenos %}
 { "name"     : "irakli"
 , "lastname" : "nadareishvili"
 , "type"	 : "test"}
