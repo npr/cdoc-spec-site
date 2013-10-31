@@ -10,3 +10,9 @@ Welcome to the Collection.Document media type
 , "lastname" : "nadareishvili"
 , "type"	 : "test"}
 {% endhighlight %}
+
+```
+{ "name"     : "irakli"
+, "lastname" : "nadareishvili"
+, "type"	 : "test"}
+```
