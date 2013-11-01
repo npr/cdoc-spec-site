@@ -36,7 +36,6 @@ Collection.Document is based on [Collection+JSON](http://amundsen.com/media-type
   <a href="http://tools.ietf.org/html/rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a>.
 </blockquote>
       
-<div id="content">
   
 ### Recursiveness
 
@@ -52,7 +51,6 @@ Despite its flexible and extensible nature, Collection.Doc is a very simple medi
 - links: expose controls and communicate relationships 
 - errors: are intended to facilitate reliable debugging of client/server interactions.
 
-</div>
 
 
 
