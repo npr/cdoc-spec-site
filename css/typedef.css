@@ -8,3 +8,8 @@ blockquote {
   background-color: #e0e0e0;
   padding: .7em;
 }
+
+dd {
+  display: block;
+  margin-left: 30px;
+}
