@@ -7,7 +7,7 @@ title: Collection.Doc Documentation
 
 ## Description
 
-Collection.Doc is a read/write, recursive hypermedia type designed to facilitate flexible exchange of structured, textual content through Hypermedia APIs. Collection.Doc+JSON is JSON representation of the media type.
+`Collection.Doc` is a read/write, recursive hypermedia type designed to facilitate flexible exchange of structured, textual content through Hypermedia APIs. `Collection.Doc+JSON` is JSON representation of the media type. Other representations (+XML, +XHTML, +HTML) can be created, but are largely out of scope for this document.
 
 Rather than being a narrowly-defined content exchange format, `Collection.Doc` aspires to be a generic media type that can host more specific standards through semantic extensions (profiles). The main goal of the `Collection.Doc` is to standardize what is common for most content APIs (but, alas, what currently everybody implements in their own way) and to create standard extension points for the remaining portion of the functionality that could be publisher- and problem-domain-specific.
 
