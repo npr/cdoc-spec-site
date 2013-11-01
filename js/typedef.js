@@ -15,7 +15,7 @@
           return $heading.text();
       },
       'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
-        return $heading[0].tagName.toLowerCase();
+        return '';
       }
   });
            
