@@ -18,5 +18,5 @@ Welcome to the Collection.Document media type documentation.
 opa
 
 
-violets are blue    
+violets are blue
 should produce manual line break
