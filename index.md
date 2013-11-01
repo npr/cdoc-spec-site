@@ -21,7 +21,7 @@ Despite its flexible and extensible nature, Collection.Doc is a very simple medi
 
 - attributes: store "state",
 - links: expose controls and communicate relationships 
-- errors: are intended for comfortable debugging of client/server interactions.
+- errors: are intended to facilitate reliable debugging of client/server interactions.
 
 
 
