@@ -15,7 +15,7 @@ Collection.Document is based on [Collection+JSON](http://amundsen.com/media-type
 
 <dl>
   <dt>Author:</dt>
-  <dd>Irakli Nadareishvili, [NPR](http://www.npr.org) (<a href="mailto:irakli@npr.org">irakli@npr.org</a>)</dd>
+  <dd>Irakli Nadareishvili, <a href="http://www.npr.orh">NPR</a> (<a href="mailto:irakli@npr.org">irakli@npr.org</a>)</dd>
   <dt>Dates:</dt>
   <dd>
     2011-06-18 (Created)<br>
