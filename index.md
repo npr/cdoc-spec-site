@@ -52,7 +52,7 @@ Despite its flexible and extensible nature, Collection.Doc is a very simple medi
 - links: expose controls and communicate relationships 
 - errors: are intended to facilitate reliable debugging of client/server interactions.
 
-</div><!-- / #content -->
+</div>
 
 
 
