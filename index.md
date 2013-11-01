@@ -5,7 +5,7 @@ title: Collection.Doc Documentation
 
 # Collection.Doc+JSON 
 
-## Media Type Description
+## Description
 
 Collection.Doc is a read/write, recursive hypermedia type designed to facilitate flexible exchange of structured, textual content through Hypermedia APIs. Collection.Doc+JSON is its JSON representation.
 
