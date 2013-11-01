@@ -7,7 +7,11 @@ title: Collection.Doc Documentation
 
 ### Media Type Description
 
-Collection Document is a read/write, recursive media type intended for flexible exchange of structured textual content.
+Collection Document is a read/write, recursive hypermedia type designed to facilitate flexible exchange of structured, textual content through Hypermedia APIs. 
+
+Rather than a narrowly-defined content exchange format, it aspires to be a generic media type that can host more specific standards through semantic extensions (profiles). The main goal of the `Collection.Doc` is to standardize what is common for most content APIs (but, alas, what currently everybody implements in their own way) and to create standard extension points for the remaining portion of the functionality that could be publisher- and problem-domain-specific.
+
+Collection.Document is heavily based on [Collection+JSON](http://amundsen.com/media-types/collection/format/) and leverages existing standards, such as: [URI Template, RFC6570](http://tools.ietf.org/html/rfc6570), [Home Document Specification](http://tools.ietf.org/html/draft-nottingham-json-home-03) and [IANA-registered Link Relation Types](http://www.iana.org/assignments/link-relations/link-relations.xhtml) wherever possible. 
 
 #### Recursiveness
 
