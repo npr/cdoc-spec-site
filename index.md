@@ -16,3 +16,7 @@ Welcome to the Collection.Document media type documentation.
     , "type"	 : "test"}
 
 opa
+
+
+violets are blue    
+should produce manual line break
