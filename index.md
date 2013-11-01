@@ -17,7 +17,11 @@ As a document, it contains a set of attributes (key/value pairs) and exposes con
 
 #### Simplicity
 
-Despite its flexible and extensible nature, Collection.Doc is a very simple media type: it has only three top-level elements: attributes, links and errors. Attributes store "state", links communicate controls and relationships, errors are intended for comfortable debugging of client/server interactions.
+Despite its flexible and extensible nature, Collection.Doc is a very simple media type: it has only three top-level elements: 
+
+- attributes: store "state",
+- links: expose controls and communicate relationships 
+- errors: are intended for comfortable debugging of client/server interactions.
 
 
 
