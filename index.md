@@ -52,6 +52,6 @@ Despite its flexible and extensible nature, Collection.Doc is a very simple medi
 - errors: are intended to facilitate reliable debugging of client/server interactions.
 
 
-
+![Collection.Doc diagram](https://raw.github.com/publicmediaplatform/pmpdocs/master/charts/collection+doc+json.png)
 
 
