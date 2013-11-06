@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #005A9C;
+}
+
+blockquote {
+  display: block;
+  border: 1px black solid;
+  background-color: #e0e0e0;
+  padding: .7em;
+  margin-left: 30px;
+}
+
+dd {
+  display: block;
+  margin-left: 30px;
+}
