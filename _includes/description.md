@@ -1,0 +1,7 @@
+## Description
+
+`Collection.Doc` is a read/write, recursive hypermedia type designed to facilitate flexible exchange of structured, textual content through Hypermedia APIs. Collection.Doc+JSON is JSON representation of the media type. Other representations (+XML, +XHTML, +HTML) can be created, but are largely out of scope for this document.
+
+Rather than being a narrowly-defined content exchange format, `Collection.Doc` aspires to be a generic media type that can host more specific standards through semantic extensions (profiles). The main goal of the `Collection.Doc` is to standardize what is common for most content APIs (collections management, i18N, pagination, content rights management, templated querying, writes etc.) but, alas, what currently every API implements in their own way. We deem it equally important to also create -standard- extension points for the remaining portion of the functionality that is typically publisher- and/or problem-domain-specific.
+
+Collection.Document is based on [Collection+JSON](http://amundsen.com/media-types/collection/format/) hypermedia type and heavily leverages existing standards, such as: [URI Template [RFC6570]](http://tools.ietf.org/html/rfc6570), [Home Document Specification](http://tools.ietf.org/html/draft-nottingham-json-home-03) and [IANA-registered Link Relation Types](http://www.iana.org/assignments/link-relations/link-relations.xhtml), wherever possible.

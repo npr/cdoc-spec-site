@@ -1,4 +1,4 @@
-;(function($){          
+;(function($){
 
   $('#toc').toc({
       'selectors': 'h3,h4,h5', //elements to use as headings
