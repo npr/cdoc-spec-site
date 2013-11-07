@@ -32,3 +32,5 @@ Despite its flexible and extensible nature, Collection.Doc is a very simple medi
 
 
 {% include link_relation.md %}
+
+{% include acknowledgements.md %}
