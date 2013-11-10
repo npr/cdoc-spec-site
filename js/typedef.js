@@ -1,5 +1,6 @@
-;(function($){
+;(function ($) {
 
+/**
   $('#toc').toc({
       'selectors': 'h3,h4,h5', //elements to use as headings
       'container': 'body', //element to find all selectors in
@@ -18,5 +19,15 @@
         return '';
       }
   });
+**/
+
+  $("#toc").tableOfContents(
+    $("body"),      // Scoped to div#wrapper
+    {
+      startLevel: 3,    // H2 and up
+      depth:      3,    // H2 through H4,
+      // topLinks:   true, // Add "Top" Links to Each Header
+    }
+  );
            
  })(jQuery);

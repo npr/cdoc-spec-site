@@ -1,6 +1,6 @@
 ## Contents
 
-<div id="toc"></div>
+{% include toc.html %}
 
 <blockquote><b>NOTE:</b><br>
   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
