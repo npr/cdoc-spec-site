@@ -1,8 +1,8 @@
 #### Profile Link Relation
 
-Profile link allows publishers to define additional, domain-specific semantics on top of the media type. This is how you would define the semantic meaning of the attributes of the specific content types--which is an important task in content publishing. 
+Profile link allows content publishers to define additional, domain-specific semantics on top of the base media type. Profiles are how you would define the semantic meaning of the attributes of a specific content type--which is an important task in content publishing. 
 
-In Collection.doc profiles MUST also be inheritable, through the "extends" link relation, allowing re-use and collaboration. Profile definitions are themselves instances of the collection document type and are saved just like any other document is. Which means: to define a new profile, you don't have to go through a standards body. Innovation around profiles is decentralized. Decentralization is good for any innovation process.
+In Collection.doc, profiles MAY be inheritable using the "extends" link relation, allowing re-use of profile definitions and collaboration around profile definitions. Profile definitions are themselves instances of the Collection.Doc media type and are saved just like any other document is. Which means: to define a new profile, you don't have to go through a standards body. Innovation around profiles is decentralized. Decentralization is typically good for any innovative process.
 
 A sample of a profile document that a profile link may point to would look something like the following:
 
