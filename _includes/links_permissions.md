@@ -1,3 +1,5 @@
-#### Permissions Link Relation
+#### Permission
 
-Permission links define who can access and modify the documents and point to a type of Collection.document that contains such information.
+Read/write. optional. URL pointing to a Collecyion.doc document that describes rights management-related information.
+
+For more see: [Content Rights Management](#content-rights)

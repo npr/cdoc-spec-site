@@ -13,4 +13,8 @@ title: Collection.Doc Documentation
 
 {% include link_relation.md %}
 
+{% include attributes.md %}
+
+{% include contentrights.md %}
+
 {% include acknowledgements.md %}

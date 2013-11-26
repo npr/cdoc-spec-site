@@ -10,7 +10,7 @@ In Collection.doc+JSON terminology `JSON link` is a JSON object that has followi
 
 - Either a required `href`: a proper [Uniform Resource Identifier (URI)](http://tools.ietf.org/html/rfc3986)
 - or a required `href-template`: a proper [URI Template](http://tools.ietf.org/html/rfc6570).
-- optional but typical `rels`: an array of secondary relationship types. Secondary relationship types further determine the semantic purpose of a link. Secondary relationship type is usually not a standards-registered relationship type and to avoid ambiguity it SHOULD be a proper, unique Uniform Resource Name (URN: [RFC2141](http://www.ietf.org/rfc/rfc2141.txt)). Typically there are multiple links associated with the primary link relation type, in a document, e.g.: you have multiple `query` type links. Secondary relationships allow us to tell the difference between various queries such as: a `query for users' and 'query for groups':
+- optional but typical `rels`: an array of secondary relationship types. Secondary relationship types further determine the semantic purpose of a link. Secondary relationship type is either a standards-registered relationship type (e.g. in case of [Navigation links](#navigation)) or a custom relationship type. Custom relationship types SHOULD be a proper, unique Uniform Resource Name (URN: [RFC2141](http://www.ietf.org/rfc/rfc2141.txt)). Typically there are multiple links associated with the primary link relation type, in a document, e.g.: you have multiple `query` type links. Secondary relationships allow us to tell the difference between various queries such as: a `query for users' and 'query for groups':
         
     ```json
     {"links" : 
@@ -41,3 +41,20 @@ For link relation types, used in Collection.doc, rather then inventing new ones,
 {% include links_buckets.md %}
 
 {% include links_permissions.md %}
+
+{% include links_nav.md %}
+
+{% include links_alternate.md %}
+
+#### Query
+
+Read-only. optional. List of templated URIs <sup>[RFC](http://tools.ietf.org/html/rfc6570)</sup> that describe range of Uniform Resource Identifiers that can be constructed through variable expansion to run searches for additional documents related to the context document.
+
+
+#### Edit
+
+Read-only. optional. A URI pointing to a document that provides information required for updating the document in the current context.
+
+#### Creator
+
+Read-only. optional. A URI pointing to a document that describes user or an organization whose API Key originally created current document.

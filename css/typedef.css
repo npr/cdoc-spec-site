@@ -6,7 +6,7 @@ p, li, dt, dd {
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     color: #005A9C;
 }
 
@@ -14,9 +14,13 @@ h1, h2, h3, h4 {
     margin-top: 1.5em;
 }
 
+h5 {
+    font-size: 16px;
+}
+
 h6 {
     color: #959592;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -65,9 +69,20 @@ h3 + *:not(h4) + *:not(h4) + h4,
 h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4,
 h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4,
 h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4, 
-h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4{
+h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4 {
   /* color: red; */ /* for debugging */
   counter-reset: section_h4;
+}
+
+h4 + h5,
+h4 + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + h4,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5, 
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5 {
+  /* color: red; */ /* for debugging */
+  counter-reset: section_h5;
 }
 
 /** Note: unfortunately the "counters" function doesn't seem to work properly for H tags, only lists */
@@ -79,6 +94,11 @@ h3:before  {
 h4:before  {
   counter-increment: section_h4;      /* Increment the section counter */
   content: "§" counter(section_h3) "." counter(section_h4) ". "; /* Display the counter */
+}
+
+h5:before  {
+  counter-increment: section_h5;      /* Increment the section counter */
+  content: "§" counter(section_h3) "." counter(section_h4) "." counter(section_h5) ". "; /* Display the counter */
 }
 
 #toc_parent ol {
