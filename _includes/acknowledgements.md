@@ -9,5 +9,6 @@ It was designed by a team at [NPR](https://www.npr.org) that included:
 - Randall Randall
 - Scott Smith
 - John Nelson
+- Kevin Moylan
 
 with valuable input and advice from [Mike Amundsen](https://github.com/mamund), [Ioseb Dzmanashvili](https://github.com/ioseb) and [Andrew Kuklewicz](https://github.com/kookster), while working on various NPR APIs and most recently: building the [Public Media Platform](http://docs.pmp.io).
