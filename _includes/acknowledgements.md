@@ -1,4 +1,4 @@
-<h2 id="ack"> Acknowledgements</h2>
+<h2 id="ack" name="ack"> Acknowledgements</h2>
 
 Collection.Doc+JSON is based on [Collection+JSON](http://amundsen.com/media-types/collection/format/) hypermedia type and heavily leverages existing standards, such as: [URI Template [RFC6570]](http://tools.ietf.org/html/rfc6570), [Home Document Specification](http://tools.ietf.org/html/draft-nottingham-json-home-03) and [IANA-registered Link Relation Types](http://www.iana.org/assignments/link-relations/link-relations.xhtml), wherever possible.
 

@@ -1,25 +1,24 @@
 ---
 layout: typedef
-title: Collection.Doc Documentation
+title: Collection.Doc Hypermedia Type
 ---
 
-# Collection.Doc+JSON - Document Format
+## Collection.Document+JSON - Hypermedia Type
 
 {% include description.md %}
 
-{% include authors_updates.html %}
+## Mime Type
 
-{% include contents.md %}
+- application/vnd.collection.doc+json
 
-{% include motivation.md %}
-{% include recursiveness.md %}
-{% include mediatypestructure.md %}
+## Materials
 
-{% include permalink.md %}
+- [Collection.Doc+JSON Hypermedia Type Specification](/spec.html)
+- Examples (coming soon)
+- Client Implementation (coming soon)
 
-{% include link_relation.md %}
-{% include attributes.md %}
+## Acknowledgments
 
-{% include contentrights.md %}
+Collection.Doc+JSON is based on [Collection+JSON](http://amundsen.com/media-types/collection/format/) hypermedia type and heavily leverages existing standards, such as: [URI Template [RFC6570]](http://tools.ietf.org/html/rfc6570), [Home Document Specification](http://tools.ietf.org/html/draft-nottingham-json-home-03) and [IANA-registered Link Relation Types](http://www.iana.org/assignments/link-relations/link-relations.xhtml), wherever possible.
 
-{% include acknowledgements.md %}
+It was designed by a team at [NPR](https://www.npr.org) that included: Irakli Nadareishvili, Javaun Moradi, Randall Randall, Scott Smith, John Nelson and Kevin Moylan with valuable input and advice from [Mike Amundsen](https://github.com/mamund), [Ioseb Dzmanashvili](https://github.com/ioseb) and [Andrew Kuklewicz](https://github.com/kookster), while working on various NPR APIs and most recently: building the [Public Media Platform](http://docs.pmp.io).
