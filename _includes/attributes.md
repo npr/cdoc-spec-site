@@ -8,7 +8,7 @@ The attributes and their semantic meaning defined for the base media type are as
 
 Read-only, optional.May be present on output only. Unique internal identifier of a document. A UUIDv4 schema SHOULD be used for generating guids. The only time an API client needs GUID directly is when creating a new document. Documents that are merely collections of search results will not have a GUID, as a search result collection is a dynamic resource identified by the URL of the search query itself.
 
-The difference between the top-level "href" field of a doucment and the "guid" attribute is that "hreF" identifies document representation as served by a specific API endpoint, whereas "guid" can identify the content item itself. If the same content is published as two Collection.Doc documents by two API servers, they SHOULD have the same guid, but they MAY have different hrefs.
+The difference between the top-level "href" field of a doucment and the "guid" attribute is that "href" identifies document representation as served by a specific API endpoint, whereas "guid" can identify the content item itself. If the same content is published as two Collection.Doc documents by two API servers, they SHOULD have the same guid, but they MAY have different hrefs.
 
 #### title
 
