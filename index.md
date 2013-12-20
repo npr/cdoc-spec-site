@@ -11,8 +11,11 @@ title: Collection.Doc Documentation
 
 {% include contents.md %}
 
-{% include link_relation.md %}
+{% include motivation.md %}
+{% include recursiveness.md %}
+{% include mediatypestructure.md %}
 
+{% include link_relation.md %}
 {% include attributes.md %}
 
 {% include contentrights.md %}
