@@ -17,7 +17,7 @@ Additionally, Collection.Doc assumes that if you have "write" access to content 
 
 #### Role-Based Security
 
-Collection.Doc's content rights management system design follows common "role-based" security pattern. Users are enrolled into permission groups, by listing user documents as items links of a permission group document. A permission group document MAY be any Collection.Doc document that is referenced via the `permission` link of a content document. Applications MAY decide to create or not to create a separate profile type for permission group documents.
+Collection.Doc's content rights management system design follows common "role-based" security pattern. Users are enrolled into permission groups, by listing user documents as items links of a permission group document. A permission group document MUST be a Collection.Doc document. It can be of any profile, as far as it is referenced via the `permission` link of a content document. Applications MAY decide to create or not to create a separate profile type for permission group documents.
 
 Both the content item as well as the permission group documents MUST be proper Collection.Doc documents and permissions MUST be granted by pointing "permission" link relation from a content item to the permission group document.
 
