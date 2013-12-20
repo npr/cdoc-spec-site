@@ -2,7 +2,7 @@
 
 Navigation is a primary link relation that defines a set of links, with the following secondary link relations: 
 
-* self <sup>[spec](http://microformats.org/wiki/existing-rel-values#non_HTML_rel_values)</sup> read-only. required. Canonical URL of the current view of the document.
+* self <sup>[spec](http://microformats.org/wiki/existing-rel-values#non_HTML_rel_values)</sup> read-only. required. Canonical URL of the current page of the paginated document.
 
 * prev <sup>[W3C](http://www.w3.org/TR/html5/links.html#link-type-prev)</sup> read-only. optional. Link representing previous page in a paginated series of items.
 

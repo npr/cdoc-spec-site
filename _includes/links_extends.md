@@ -1,0 +1,3 @@
+#### Extends
+
+Extends link relation type allows document profiles to extend each other's semantic definitions. A profile definition that extends another one MUST inherit all semantic definitions in the parent profile and MUST NOT override them. Child profile is only allowed to define additional semantics, but not allowed to change or invalidate the definitions in the parent. This is a crucial requirement to facilitate Must Ignore strategy.
