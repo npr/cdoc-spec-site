@@ -8,7 +8,7 @@ In the JSON representation of the media type, the `links` field is a JSON object
 
 In Collection.doc+JSON a `Link Object` is a JSON object that has following fields:
 
-- One of `href` or `href-template` fields MUST be present. An href attribute, if present,  MUST be  a valid [Uniform Resource Identifier (URI)](http://tools.ietf.org/html/rfc3986). An href-template attribute, if present, MUST be a valid [URI Template](http://tools.ietf.org/html/rfc6570).
+- One of `href` or `href-template` fields MUST be present. An href attribute, if present, MUST be a valid [Uniform Resource Identifier (URI)](http://tools.ietf.org/html/rfc3986). An href-template attribute, if present, MUST be a valid [URI Template](http://tools.ietf.org/html/rfc6570).
 - `rels` field is optional, but typical. It is a JSON array of secondary relationship types. Secondary relationship types further determine the semantic purpose of a link. Secondary relationship type MUST be either a standards-registered relationship type (e.g. in case of [Navigation links](#navigation)) or a custom relationship type. Custom relationship types SHOULD be a proper, unique Uniform Resource Name (URN: [RFC2141](http://www.ietf.org/rfc/rfc2141.txt)). 
 
     Typically there are multiple links associated with a primary link relation type in a document. For instance, you MAY have multiple `query` links. Secondary relationships allow to tell the difference between various query links, e.g. a `query for users' and 'query for groups' etc.:

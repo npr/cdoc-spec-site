@@ -15,6 +15,8 @@ title: Collection.Doc Documentation
 {% include recursiveness.md %}
 {% include mediatypestructure.md %}
 
+{% include permalink.md %}
+
 {% include link_relation.md %}
 {% include attributes.md %}
 
