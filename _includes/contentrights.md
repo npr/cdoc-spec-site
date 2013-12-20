@@ -17,7 +17,7 @@ Additionally, Collection.Doc assumes that if you have "write" access to content 
 
 #### Role-Based Security
 
-Collection.Doc's content rights management system design follows common "role-based" security pattern. Rights to content are granted by enrolling (i.e. listing as items) of users into a document of a "permission group" profile type and assigning permissions to those groups, rather than directly to users.
+Collection.Doc's content rights management system design follows common "role-based" security pattern. Users are enrolled into permission groups, by listing user documents as items links of a permission group document. A permission group document MAY be any Collection.Doc document that is referenced via the `permission` link of a content document. Applications MAY decide to create or not to create a separate profile type for permission group documents.
 
 Both the content item as well as the permission group documents MUST be proper Collection.Doc documents and permissions MUST be granted by pointing "permission" link relation from a content item to the permission group document.
 
@@ -128,19 +128,3 @@ For "write" operations, not having a "whitelist" defined means that the default 
 For "read" operations, not having an explicit "whitelist" means that the default read behavior applies, where any PMP user with an API Key (or alternative valid authentication token) can "read" a document. By defining a blacklist you can restrict specific users/organizations, but since they can probably easily register as another user - are you really securing anything?
 
 Defining a "blacklist" permission relation without a "whitelist" permission relation also defined on a document is usually a ["smell"](http://en.wikipedia.org/wiki/Code_smell) of potential misconfiguration. It is not invalid, since it is not technically wrong, but publishers should be careful and treat such definitions as indications of a possible error.
-
-#### Rights Management Workflow
-
-To modify permissions on a document, it must be retrieved as a whole, permissions altered and re-saved. There may be a support implemented for PATCH in the future, but no such feature is planned for the current version.
-
-
-Permissions must be specified on the story itself during a publish PUT or POST. Server performs following processing steps:
-
-1. receive document
-1. do immediate validation checks
-  * do permission groups referenced exist?
-  * do "additive" math of all "permissions" link relations and calculate resulting permissions for each group. 
-1. build denormalized list of allowed organizations (if not public)
-1. attach list of allowed organizations to the document
-1. attach list of allowed organizations to the search document
-1. index search document
