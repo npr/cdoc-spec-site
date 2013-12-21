@@ -75,7 +75,7 @@ Please notice that the "permission" link relation in the example above contains 
 The resulting additivity rules matrix looks like the following:
 
 ```
-r(y)        = r(y) and w(n)
+r(y)        = r(y) and w(undefined)
 w(y)        = w(y) and r(y) 
 w(y) + r(n) = w(y) and r(y)
 w(n) + r(y) = w(n) and r(y)
