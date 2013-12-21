@@ -25,7 +25,7 @@ Both the content item as well as the permission group documents MUST be proper C
 
 ![Docs and PermGroups relationship graph](img/docpermissions.png)
 
-The "permission" link relation can be used to establish rights management relationships. Presence of a "permission" link relation indicates that the current resource may have access restricted. By default "read" access is open to anybody and "write" access is restricted to the original publisher of the document ("creator"). A "permission" link relation can alter those defaults and provide much flexibility in rights management.
+The "permission" link relation can be used to establish rights management relationships. Presence of a "permission" link relation indicates that the current resource may have access restricted. By default "read" access is open to anybody and "write" access is restricted to the original publisher of the document ("creator") and [distributors](#distributor). A "permission" link relation can alter those defaults and provide much flexibility in rights management.
 
 Links using the "permission" link relation MUST point to a dereferenceable resource that SHOULD provide a resource of a known media type. Permissions link relation MAY point to multiple links.
 
@@ -70,7 +70,7 @@ Please notice that the "permission" link relation in the example above contains 
 
 1. First all "write" rules are processed separately, then read rules are processed and only in the end the two are combined + conflicts are resolved.
 
-1. Creator user/organization can never be denied either "read" or "write" access to a document. This rule trumps all others.
+1. A creator and distributor user/organization can never be denied either "read" or "write" access to a document. This rule trumps all others.
 
 The resulting additivity rules matrix looks like the following:
 
@@ -107,15 +107,15 @@ In this case rule #1 governed that `r(y) + r(n) = r(n)`, but it was overridden w
 
 1. If you omit the permission link relation altogether, it means:
     - Document is accessible for "read" to anybody
-    - Document is accessible for "write" only to the creator.
-2. To indicate that a document is view-able only by the creator, you need to create a group that only contains the creator, and specify it as a read whitelist:
+    - Document is accessible for "write" only to the creator and distributors.
+2. To indicate that a document is view-able only by the creator and distributors, you need to create a group that only contains the creator and specify it as a read whitelist:
 
     ```json
     { "href"      : "https://api.pmp.io/docs/3709eda6-0c57-4f67-ab8f-efddb641297d"
     , "operation" : "read"
     } 
     ```
-where `3709eda6-0c57-4f67-ab8f-efddb641297d` is the guid of the document that defines the creator. Creators always have read and write permissions on a document, so this just serves to prevent others from having access.
+where `3709eda6-0c57-4f67-ab8f-efddb641297d` is the guid of the document that defines the creator. Creator and distributors always have read and write permissions on a document, so this just serves to prevent others from having access.
 
 #### A Blacklist Without a Whitelist.
 
@@ -123,8 +123,8 @@ This is an important use-case worth discussing separately.
 
 While technically valid, it rarely makes any sense to define a blacklist without defining a whitelist group regardless of an operation type. 
 
-For "write" operations, not having a "whitelist" defined means that the default write behavior applies, where only the creator is allowed to modify content. Creator cannot be denied access, so why define an extraneous "blacklist"?
+For "write" operations, not having a "whitelist" defined means that the default write behavior applies, where only the creator and distributors are allowed to modify content. Creator and distributors cannot be denied access, so why define an extraneous "blacklist"?
 
-For "read" operations, not having an explicit "whitelist" means that the default read behavior applies, where any PMP user with an API Key (or alternative valid authentication token) can "read" a document. By defining a blacklist you can restrict specific users/organizations, but since they can probably easily register as another user - are you really securing anything?
+For "read" operations, not having an explicit "whitelist" means that the default read behavior applies, where any API user with an API Key (or alternative valid authentication token) can "read" a document. By defining a blacklist you can restrict specific users/organizations, but since they can probably easily register as another user - are you really securing anything?
 
 Defining a "blacklist" permission relation without a "whitelist" permission relation also defined on a document is usually a ["smell"](http://en.wikipedia.org/wiki/Code_smell) of potential misconfiguration. It is not invalid, since it is not technically wrong, but publishers should be careful and treat such definitions as indications of a possible error.
