@@ -107,15 +107,15 @@ In this case rule #1 governed that `r(y) + r(n) = r(n)`, but it was overridden w
 
 1. If you omit the permission link relation altogether, it means:
     - Document is accessible for "read" to anybody
-    - Document is accessible for "write" only to the creator and distributors.
-2. To indicate that a document is view-able only by the creator and distributors, you need to create a group that only contains the creator or distributors, and specify it as a read whitelist:
+    - Document is accessible for "write" only to the creator.
+2. To indicate that a document is view-able only by the creator, you need to create a group that only contains the creator, and specify it as a read whitelist:
 
     ```json
     { "href"      : "https://api.pmp.io/docs/3709eda6-0c57-4f67-ab8f-efddb641297d"
     , "operation" : "read"
     } 
     ```
-where `3709eda6-0c57-4f67-ab8f-efddb641297d` is the guid of the document that defines the creator. Creators and distributors always have read and write permissions on a document, so this just serves to prevent others from having access.
+where `3709eda6-0c57-4f67-ab8f-efddb641297d` is the guid of the document that defines the creator. Creators always have read and write permissions on a document, so this just serves to prevent others from having access.
 
 #### A Blacklist Without a Whitelist.
 
