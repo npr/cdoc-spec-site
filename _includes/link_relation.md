@@ -64,4 +64,4 @@ Read-only. optional. A URI pointing to a document that describes user or an orga
 
 #### Distributor
 
-Read/write. optional. A URI pointing to a document that describes users or organizations that are allowed to fully administer the document. This is a mechanism for the original publisher of the content to share responsibility or delegate responsibility of content administration with other collaborators. Distributors, alongside the creator, are the only party that can administer read/write permissions of a document.
+Read/write. optional. A URI pointing to a document that describes users or organizations that are allowed to fully administer the document. This is a mechanism for the original publisher of the content to share responsibility with or delegate responsibility of content administration to other collaborators. Distributors, alongside the creator, are the only party that can administer read/write permissions of a document.
