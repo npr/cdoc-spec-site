@@ -25,7 +25,7 @@ Both the content item as well as the permission group documents MUST be proper C
 
 ![Docs and PermGroups relationship graph](img/docpermissions.png)
 
-The "permission" link relation can be used to establish rights management relationships. Presence of a "permission" link relation indicates that the current resource may have access restricted. By default "read" access is open to anybody and "write" access is restricted to the original publisher of the document ("creator") and [distributors](#distributor). A "permission" link relation can alter those defaults and provide much flexibility in rights management.
+The "permission" link relation can be used to establish rights management relationships. Presence of a "permission" link relation indicates that the current resource may have access restricted. By default "read" access is open to anybody and "write" access is restricted to the original publisher of the document ("[creator](#creator)") and [distributors](#distributor). A "permission" link relation can alter those defaults and provide much flexibility in rights management.
 
 Links using the "permission" link relation MUST point to a dereferenceable resource that SHOULD provide a resource of a known media type. Permissions link relation MAY point to multiple links.
 
