@@ -1,3 +1,9 @@
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .04em;  
+}
+
 p, li, dt, dd {
     font-size: 16px;
     color: #302C25;
