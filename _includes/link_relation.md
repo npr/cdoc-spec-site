@@ -1,6 +1,6 @@
 ### Links
 
-Links attribute is possibly the most important attribute of the `Collection.doc+JSON` media type. It contains hyperlinks representing various relationships that current document has to other documents and actions that can be performed in the context of the current document.
+Top-level Links field is possibly the most important component of the `Collection.doc+JSON` media type. It contains hyperlinks representing various relationships that current document has to other documents and actions that can be performed in the context of the current document.
 
 Links is also where the biggest opportunity for standardization lies: most APIs implement the same controls in different ways. Standardizing those takes us long way towards interoperable APIs and API clients.
 
