@@ -26,21 +26,19 @@ h6:after { content: ":" }
 
 ###### Name
 
-Irakli Nadareishvili on behalf of NPR
+Irakli Nadareishvili
 
 ###### Email
 
-irakli@npr.org
+irakli@gmail.com
 
 ###### MIME media type name
 
 Application
 
-
 ###### MIME subtype name
 
 Vendor Tree - vnd.collection.doc+json
-
 
 ###### Required parameters
 
@@ -71,22 +69,36 @@ http://cdoc.io/spec.html
 
 Various
 
+###### Fragment Identifier Considerations
+
+Collection.Doc+JSON uses JSON for document serialization and therefore follows RFC6901 for URI Fragment Identification.
+
+###### Restrictions on usage
+
+None
+
+##### Provisional registration? (standards tree only) :
+Registration is for vendor tree
+
 ######Additional information
 
+1. Deprecated alias names for this type : n/a
 1. Magic number(s) : n/a
-2. File extension(s) : .json
-3. Macingtosh file type code : TEXT
-4. Object Identifiers: n/a
+1. File extension(s) : .json
+1. Macingtosh file type code : TEXT
+1. Object Identifiers: n/a
 
 ###### Person to contact for further information
 
 1. Name : Irakli Nadareishvili
-2. Email : irakli@npr.org
+2. Email : irakli@gmail.com
 
 ###### Intended Usage
 
 Common
 
+Collection.Doc is a read/write, recursive hypermedia-type designed to facilitate flexible exchange of structured content through web APIs.
+
 ###### Author/Change controller
 
-Irakli Nadareishvili
+Irakli Nadareishvili on behalf of NPR (National Public Radio).
