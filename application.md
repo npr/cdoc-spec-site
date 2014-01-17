@@ -71,7 +71,7 @@ Various
 
 ###### Fragment Identifier Considerations
 
-Collection.Doc+JSON uses JSON for document serialization and therefore follows RFC6901 for URI Fragment Identification.
+Collection.Doc+JSON follows RFC6901 for implementing URI Fragment Identification standard to JSON content types.
 
 ###### Restrictions on usage
 
