@@ -77,10 +77,10 @@ Collection.Doc+JSON uses JSON for document serialization and therefore follows R
 
 None
 
-##### Provisional registration? (standards tree only) :
+###### Provisional registration? (standards tree only) :
 Registration is for vendor tree
 
-######Additional information
+###### Additional information
 
 1. Deprecated alias names for this type : n/a
 1. Magic number(s) : n/a
