@@ -53,10 +53,14 @@ span.reg-draft {
     padding: 2px 4px;
 }
 
-span.reg-approved {
+span.reg-approved, span.reg-approved a {
     background: green;
     color: white;
     padding: 2px 4px;
+}
+
+span.reg-approved a {
+  text-decoration: underline;
 }
 
 /* 
