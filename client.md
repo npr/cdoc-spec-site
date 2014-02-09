@@ -3,9 +3,9 @@ layout: typedef
 title: Collection.Doc Documentation
 ---
 
-# Client SDK Implementation Recommendations
+# Hypermedia Client SDK Implementation
 
-Following are some suggestions for implementing a capable SDK for a Collection.Doc-driven API.
+Following are some suggestions for implementing a capable SDK for a Collection.Doc-driven Hypermedia API.
 
 ## UML Diagram of Suggested Implementation
 
