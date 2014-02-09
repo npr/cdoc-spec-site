@@ -11,7 +11,7 @@ Following are some suggestions for implementing a capable SDK for a Collection.D
 
 ![UML Diagram of Suggested Implementation](/img/cdoc-client.png) 
 
-## Commentary
+## The SDK Should Be a Proper HTTP Client
 
 Any Hypermedia client must be a proper HTTP client and implement fundamental functionality such as: security, encryption and caching properly. Specifically, the SDK must provide means to properly authenticate with the server, must implement TLS/SSL and verify certificates properly, must respect caching headers sent by the server and cache information accordingly.
 
