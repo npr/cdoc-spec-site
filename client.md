@@ -19,7 +19,7 @@ Proper Hypermedia SDK should never hardcode any URIs, but be able to resolve fun
 
 ## Flow
 
-Much like in HTML-world, most interactions involve hitting some URI to grab an HTML on that URI, a typical interaction with a Collection.Document API means hitting some URI and expecting a Collection.Document in the response. If you're just starting your interaction with the API, you'd just hit the root URI of the API (e.g.: https://api.pmp.io) and expect to get enough information in return to start interacting with the API.
+Much like in the HTML-driven web most interactions involve hitting some URI to grab an HTML at that URI, a typical interaction with a Collection.Document API means hitting some URI and expecting a Collection.Document in the response. If you're just starting your interaction with the API, you'd just hit the root URI of the API (e.g.: https://api.pmp.io) and expect to get enough information in return to start interacting with the API.
 
 Given this flow, CollectionDocument class is the central class of the Client SDK design. An instance of CollectionDocument is initialized by passing a URI to the constructor. Once the document is initialized (by loading the resource at the URI), the name of the game becomes: "Let's figure out what we can do further". 
 
