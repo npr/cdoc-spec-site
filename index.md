@@ -14,8 +14,8 @@ title: Collection.Doc Hypermedia Type
 ## Materials
 
 - [Collection.Doc+JSON Hypermedia Type Specification](/spec.html) <span class="reg-approved"><a href="http://www.iana.org/assignments/media-types/application/vnd.collection.doc+json">Approved</a></span>
-- Examples (coming soon)
 - [Client SDK Implementation](/client.html)
+- Examples (coming soon)
 
 ## Acknowledgments
 
