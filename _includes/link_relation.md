@@ -16,7 +16,7 @@ In Collection.doc+JSON a `Link Object` is a JSON object that has following field
     ```json
     {"links" : 
        {"query" :  
-            {
+            [{
                 "href-template": "...",
                 "title": "Query for users",
                 "rels": [ "urn:pmp:query:users"]
@@ -25,7 +25,7 @@ In Collection.doc+JSON a `Link Object` is a JSON object that has following field
                 "href-template": "...",
                 "title": "Query for groups",
                 "rels": [ "urn:pmp:query:groups"]
-            }
+            }]
         }
     } 
     ```
