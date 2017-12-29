@@ -1,4 +1,4 @@
-CollectionDoc
+Collection.Doc+JSON Specification
 =============
 
-Collection.Doc Media Type
+Specification for the application/vnd.collection.doc+json media type
